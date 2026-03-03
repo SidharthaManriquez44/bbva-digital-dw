@@ -1,4 +1,12 @@
 #  BBVA Digital Data Warehouse  
+
+![Postgres](https://img.shields.io/badge/database-PostgreSQL-316192)
+![DW](https://img.shields.io/badge/DataWarehouse-Layered%20Architecture-purple)
+![Model](https://img.shields.io/badge/modeling-Star%20Schema-yellow)
+![Load Strategy](https://img.shields.io/badge/loading-Snapshot%20Strategy-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Docker](https://img.shields.io/badge/docker-ready-blue)
+
 ### Star Schema Design for Digital vs Physical Banking Analysis
 
 This project implements a production-style Data Warehouse designed to analyze the structural transformation of banking operations from physical infrastructure toward digital channels.
