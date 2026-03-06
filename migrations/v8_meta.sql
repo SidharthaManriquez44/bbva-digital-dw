@@ -1,0 +1,18 @@
+-- =====================================================
+-- Table: meta.etl_runs
+-- Purpose: This is one of the most important improvements
+--          in real-world pipelines because it allows:
+--          * pipeline auditing
+--          * knowing when it ran
+--          * knowing if it failed
+--          * knowing how many records it loaded
+-- =====================================================
+CREATE TABLE meta.etl_runs (
+    run_id BIGSERIAL PRIMARY KEY,
+    pipeline_name VARCHAR(100),
+    start_time TIMESTAMP,
+    end_time TIMESTAMP,
+    status VARCHAR(20),
+    rows_loaded INTEGER,
+    error_message TEXT
+);
