@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Docker](https://img.shields.io/badge/docker-ready-blue)
 
-### Star Schema Design for Digital vs Physical Banking Analysis
+### Star Schema Design for Digital
 
 This project implements a production-style Data Warehouse designed to analyze the structural transformation of banking operations from physical infrastructure toward digital channels.
 
@@ -57,7 +57,8 @@ bbva-digital-dw/
 │   ├── v4__dimensions.sql
 │   ├── v5__facts.sql
 │   ├── v6__indexes.sql
-│   └── v7__mart.sql
+│   ├── v7__mart.sql
+│   └── v8__meta.sql
 │
 ├── docker/
 │   └── docker-compose.yml
