@@ -16,3 +16,14 @@ CREATE TABLE meta.etl_runs (
     rows_loaded INTEGER,
     error_message TEXT
 );
+
+-- =====================================================
+-- We must to create a initial insert in the table watermarks
+--          INSERT INTO meta.pipeline_watermarks
+--          VALUES ('bbva_data_pipeline', 0);
+-- =====================================================
+
+CREATE TABLE meta.pipeline_watermarks (
+    pipeline_name TEXT PRIMARY KEY,
+    last_year INTEGER
+);
